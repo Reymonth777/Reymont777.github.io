@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIASTORE - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ARIASTORE</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to ARIASTORE</h1>
+            <p>Discover our exclusive collection</p>
+        </section>
+        <section class="products">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7484d445-9290-4b27-b345-dab7d719836c/W+J+BRK+FLC+PO++24.png" alt="Nike Fleece Hoodie">
+                <div class="product-info">
+                    <h3>Nike Fleece Hoodie</h3>
+                    <p class="price">$90.00</p>
+                    <button onclick="addToCart(1, 'Nike Fleece Hoodie', 90, 'https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7484d445-9290-4b27-b345-dab7d719836c/W+J+BRK+FLC+PO++24.png')">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/969a92e2-1c34-4229-9c76-13666093bcee/M+J+FLT+FLC+PO.png" alt="Nike Jordan Flight Fleece">
+                <div class="product-info">
+                    <h3>Nike Jordan Flight Fleece</h3>
+                    <p class="price">$100.00</p>
+                    <button onclick="addToCart(2, 'Nike Jordan Flight Fleece', 100, 'https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/969a92e2-1c34-4229-9c76-13666093bcee/M+J+FLT+FLC+PO.png')">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d3fe9b4a-d242-400b-a3b9-21f0d18bd877/W+J+FLT+FLC+PO++24.png" alt="Nike Women Flight Fleece">
+                <div class="product-info">
+                    <h3>Nike Women Flight Fleece</h3>
+                    <p class="price">$95.00</p>
+                    <button onclick="addToCart(3, 'Nike Women Flight Fleece', 95, 'https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d3fe9b4a-d242-400b-a3b9-21f0d18bd877/W+J+FLT+FLC+PO++24.png')">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/06dce7df-cacd-4054-916f-c72f16d70249/M+J+AIR+JDN+WM+FLC+PO.png" alt="Nike Air Jordan Fleece">
+                <div class="product-info">
+                    <h3>Nike Air Jordan Fleece</h3>
+                    <p class="price">$85.00</p>
+                    <button onclick="addToCart(4, 'Nike Air Jordan Fleece', 85, 'https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/06dce7df-cacd-4054-916f-c72f16d70249/M+J+AIR+JDN+WM+FLC+PO.png')">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product Card 5 -->
+            <div class="product-card">
+                <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/969a92e2-1c34-4229-9c76-13666093bcee/M+J+FLT+FLC+PO.png" alt="Nike Air Jordan Wordmark">
+                <div class="product-info">
+                    <h3>Nike Air Jordan Wordmark</h3>
+                    <p class="price">$110.00</p>
+                    <button onclick="addToCart(5, 'Nike Air Jordan Wordmark', 110, 'https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/969a92e2-1c34-4229-9c76-13666093bcee/M+J+FLT+FLC+PO.png')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
